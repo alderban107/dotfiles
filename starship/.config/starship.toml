@@ -1,0 +1,18 @@
+# Don't print a new line at the start of the prompt
+add_newline = false
+
+# Use custom format
+format = """
+[┌───────────────────>](#FFA500)
+[│](#FFA500)  $directory
+[└─> $username@$hostname λ](#FFA500) """
+
+#success_symbol = "[λ](#FFA500)"
+
+[username]
+show_always = true
+format = "[$user]($style)"
+
+[hostname]
+ssh_only = false
+format = "[$hostname]($style)"
