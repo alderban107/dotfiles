@@ -3,7 +3,7 @@ add_newline = false
 
 # Use custom format
 format = """
-[┌───────────────────>](#FFA500)
+[┌───────────────────>](#FFA500)$git_branch$git_status
 [│](#FFA500)  $directory
 [└─> $username@$hostname λ](#FFA500) """
 
@@ -16,3 +16,6 @@ format = "[$user]($style)"
 [hostname]
 ssh_only = false
 format = "[$hostname]($style)"
+
+[git_branch]
+format = "\n[│](#FFA500)  [$symbol$branch]($style) "
