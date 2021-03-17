@@ -12,12 +12,20 @@ format = """
 [username]
 show_always = true
 format = "[$user]($style)"
-style = "bold bright-yellow"
+style_user = "bold yellow"
 
 [hostname]
 ssh_only = false
 format = "[$hostname]($style)"
-style = "bold bright-green"
+style = "bold green"
 
 [git_branch]
 format = "\n[│](#FFA500)  [$symbol$branch]($style) "
+
+[directory]
+truncate_to_repo = false
+
+[time]
+disabled = true
+format = "\n[│](#FFA500)    [$time]($style)"
+use_12hr = true
